@@ -1,0 +1,30 @@
+@import "../../../assets/variables.scss";
+
+.active *{
+  color: $primary-purple;
+}
+
+.flex{
+  
+  padding-left: 10px ;
+  min-height: 3em;
+  display: flex;
+  gap: 40px;
+  height: fit-content;
+
+
+  a{
+    color: black;
+  }
+
+  @media (max-width: 670px){
+    justify-content: center;
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+

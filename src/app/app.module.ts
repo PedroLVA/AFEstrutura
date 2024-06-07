@@ -18,6 +18,7 @@ import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { ProductsFilterComponent } from './components/products-filter/products-filter.component';
 
 
 
@@ -30,7 +31,8 @@ import { MatSelectModule } from '@angular/material/select';
     HomeComponent,
     VerProdutosComponent,
     AdicionarProdutosComponent,
-    CardComponent
+    CardComponent,
+    ProductsFilterComponent
     
   ],
   imports: [

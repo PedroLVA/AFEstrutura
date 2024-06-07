@@ -13,6 +13,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { VerProdutosComponent } from './components/ver-produtos/ver-produtos.component';
 import { AdicionarProdutosComponent } from './components/adicionar-produtos/adicionar-produtos.component';
+import {MatButtonModule} from '@angular/material/button';
+import { CardComponent } from './components/card/card.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+
+
+
 
 @NgModule({
   declarations: [
@@ -22,12 +30,19 @@ import { AdicionarProdutosComponent } from './components/adicionar-produtos/adic
     HomeComponent,
     VerProdutosComponent,
     AdicionarProdutosComponent,
+    CardComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatSelectModule
+    
   ],
   providers: [
     provideClientHydration(),

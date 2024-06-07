@@ -1,34 +1,64 @@
 @import "../../../assets/variables.scss";
 
-.active *{
-  color: $primary-purple;
+// Styles for the active class with animation
+.active span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: $primary-purple;
+  transition: width 0.3s ease-in-out;
 }
 
-.flex{
-  
-  padding-left: 10px ;
+button {
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+
+  // Initial state of the border
+  span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: $primary-purple;
+    transition: width 0.3s ease-in-out;
+  }
+
+  // On hover, expand the border
+  &:hover span::after {
+    width: 100%;
+  }
+
+  // Ensure inactive buttons reset the border width
+  &:not(.active) span::after {
+    width: 0;
+  }
+}
+
+// Flex container styles
+.flex {
+  padding-left: 10px;
   min-height: 3em;
   display: flex;
   gap: 40px;
   height: fit-content;
 
-  button{
-    font-size: 16px;
-  }
-
-
-  a{
+  a {
     color: black;
   }
 
-  @media (max-width: 670px){
+  @media (max-width: 670px) {
     justify-content: center;
     gap: 0px;
     flex-direction: column;
     align-items: center;
   }
 }
-
 
 
 

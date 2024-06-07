@@ -1,6 +1,6 @@
 @import "../../../assets/variables.scss";
 
-// Styles for the active class with animation
+
 .active span::after {
   content: '';
   position: absolute;
@@ -17,7 +17,7 @@ button {
   padding: 10px;
   font-size: 16px;
 
-  // Initial state of the border
+  
   span::after {
     content: '';
     position: absolute;
@@ -29,18 +29,18 @@ button {
     transition: width 0.3s ease-in-out;
   }
 
-  // On hover, expand the border
+ 
   &:hover span::after {
     width: 100%;
   }
 
-  // Ensure inactive buttons reset the border width
+ 
   &:not(.active) span::after {
     width: 0;
   }
 }
 
-// Flex container styles
+
 .flex {
   padding-left: 10px;
   min-height: 3em;

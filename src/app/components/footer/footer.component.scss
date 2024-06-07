@@ -1,0 +1,25 @@
+@import "../../../assets/variables.scss";
+
+.container-footer{
+    margin-top: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .flex{
+        justify-content: center;
+        display: flex;
+        gap: 2em;
+
+        p{
+            font-weight: 500;
+        }
+
+        @media (max-width: 670px) {
+            justify-content: center;
+            gap: 0px;
+            flex-direction: column;
+            align-items: center;
+          }
+        
+    }
+}

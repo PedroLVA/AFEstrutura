@@ -16,7 +16,7 @@ const routes: Routes = [
     component: AdicionarProdutosComponent
   },
   {
-    path: 'visualizar',
+    path: 'ver-produtos',
     component: VerProdutosComponent
   },
 

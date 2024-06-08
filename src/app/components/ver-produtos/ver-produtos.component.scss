@@ -12,6 +12,23 @@
 
 .wrapper{
   margin: 10px auto 10px auto;
- width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  width: 80%;
+}
+
+.flex-filter-undo{
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.button{
+  height: fit-content;
+}
+
+::ng-deep .mat-mdc-form-field-subscript-wrapper, .mat-mdc-form-field-bottom-align::before {
+  display: none;
 }
  

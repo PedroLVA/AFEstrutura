@@ -1,6 +1,8 @@
 @import "../../../assets/variables.scss";
 .example-card {
     max-width: 400px;
+    border-top: 20px solid $primary-purple;
+    border-radius: 20px ;
   }
   
  .flex{
@@ -8,5 +10,10 @@
     justify-content: space-between;
  }
 
+ .raisedButton{
+   border-radius: 20px ;
+ }
+
+ 
 
  

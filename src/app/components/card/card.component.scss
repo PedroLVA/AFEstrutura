@@ -1,6 +1,7 @@
 @import "../../../assets/variables.scss";
 .example-card {
     width: 400px;
+    min-height: 264px;
     border-top: 20px solid $primary-purple;
     border-radius: 20px ;
     overflow: hidden;
@@ -15,9 +16,11 @@
  .flex{
     display: flex;
     justify-content: space-between;
+    flex: 1;
  }
 
  .raisedButton{
+  align-self: flex-end;
    border-radius: 20px ;
  }
 

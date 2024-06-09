@@ -22,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 
@@ -51,6 +52,8 @@ import {MatMenuModule} from '@angular/material/menu';
     ReactiveFormsModule,
     FormsModule,
     MatMenuModule,
+    MatTooltipModule,
+    
   ],
   providers: [
     provideClientHydration(),

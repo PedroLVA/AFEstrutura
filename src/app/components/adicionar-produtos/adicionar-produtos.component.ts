@@ -33,6 +33,7 @@ export class AdicionarProdutosComponent {
   }
 
   register(){
+    console.log("chegou aqui")
     this.product = this.productForm.value;
     if (this.product) {
       if (this.actualId) {

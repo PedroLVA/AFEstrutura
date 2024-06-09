@@ -29,7 +29,7 @@ export class BinaryTree {
       }
       if (product.price < root.product.price) {
           root.left = this.insertRec(root.left, product);
-      } else if (product.price > root.product.price) {
+      } else if (product.price >= root.product.price) {
           root.right = this.insertRec(root.right, product);
       }
       return root;

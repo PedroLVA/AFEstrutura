@@ -7,10 +7,10 @@
         <mat-option value="two">Preço decrescente</mat-option>
       </mat-select>
     </mat-form-field>
-    <button mat-flat-button color="primary" (click)="undoDelete()">
+    <button mat-flat-button color="primary" matTooltip="Retorna o último card" (click)="undoDelete()">
       <mat-icon>undo</mat-icon> Desfazer
     </button>
-    <button mat-button [matMenuTriggerFor]="menu">Adicionar Produto</button>
+    <button mat-flat-button color="primary" matTooltip="Menu para adicionar um produto" [matMenuTriggerFor]="menu">Adicionar Produto</button>
     <div class="stop-propagation" (click)="$event.stopPropagation()">
       <mat-menu #menu="matMenu" (click)="$event.stopPropagation()">
         <app-adicionar-produtos
@@ -22,10 +22,19 @@
   </div>
 
   <div class="container-cards box">
-    <app-card
-      *ngFor="let product of products; let i = index"
-      [product]="product"
-      (idFromRemovedProduct)="onProductDeleted($event)"
-    ></app-card>
+    <ng-container *ngIf="products.length > 0; else noProducts">
+      <app-card
+        *ngFor="let product of products; let i = index"
+        [product]="product"
+        (idFromRemovedProduct)="onProductDeleted($event)"
+      ></app-card>
+    </ng-container>
+    <ng-template #noProducts>
+      <div class="flex">
+        <h1 style="color: lightgray;">Nenhum produto encontrado.</h1>
+        <mat-icon style="font-size: 70px; width: 70px; height: 70px; color: lightgray">search</mat-icon>
+      </div>
+    
+    </ng-template>
   </div>
 </div>

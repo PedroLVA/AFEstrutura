@@ -9,7 +9,7 @@
     <p>{{ product.price | currency }}</p>
   </mat-card-content>
   <mat-card-actions class="flex">
-    <button mat-raised-button color="warn" class="raisedButton" (click)="deleteProduct()">
+    <button mat-raised-button color="warn" class="raisedButton"matTooltip="Deleta o produto selecionado (pode ser desfeito)"  (click)="deleteProduct()">
       Delete
     </button>
   </mat-card-actions>

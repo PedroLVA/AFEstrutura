@@ -33,7 +33,6 @@ export class VerProdutosComponent {
     this.actualId++;
     this.binaryTree.insert(newProduct);
     this.updateProductsList('ascending');
-    console.log(this.binaryTree.inorder());
   }
 
   updateProductsList(order: 'ascending' | 'descending') {

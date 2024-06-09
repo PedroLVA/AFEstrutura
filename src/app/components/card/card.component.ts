@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import IProduct from '../../utils/IProduct';
 
 @Component({
@@ -8,6 +8,11 @@ import IProduct from '../../utils/IProduct';
 })
 export class CardComponent {
 
+  @Output() idFromRemovedProduct = new EventEmitter<number>();
   @Input() product: IProduct = {} as IProduct;
+
+  deleteProduct() {
+    this.idFromRemovedProduct.emit(this.product.id);
+  }
 
 }

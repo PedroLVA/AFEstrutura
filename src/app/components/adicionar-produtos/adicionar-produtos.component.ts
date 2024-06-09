@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -16,6 +16,8 @@ export class AdicionarProdutosComponent {
   productForm: FormGroup = new FormGroup({});
   product: IProduct | null = null;
 
+
+  @Input() actualId: number | undefined;
   @Output() addProduct = new EventEmitter<IProduct>();
 
   constructor(
@@ -33,6 +35,9 @@ export class AdicionarProdutosComponent {
   register(){
     this.product = this.productForm.value;
     if (this.product) {
+      if (this.actualId) {
+        this.product.id = this.actualId + 1;
+      }
       this.addProduct.emit(this.product);
       this.productForm.reset();
     }

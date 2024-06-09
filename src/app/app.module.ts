@@ -22,7 +22,7 @@ import { ProductsFilterComponent } from './components/products-filter/products-f
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -51,6 +51,7 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
+    MatMenuModule,
   
    
     

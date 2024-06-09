@@ -5,6 +5,7 @@ import { VerProdutosComponent } from './components/ver-produtos/ver-produtos.com
 import { AdicionarProdutosComponent } from './components/adicionar-produtos/adicionar-produtos.component';
 
 
+
 const routes: Routes = [
  
     {

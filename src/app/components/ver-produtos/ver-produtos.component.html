@@ -1,9 +1,17 @@
 <div class="wrapper">
     <div class="flex-filter-undo">
         <app-products-filter></app-products-filter>
-        <button mat-flat-button color="primary" ><mat-icon>undo</mat-icon></button>
+        <button mat-flat-button color="primary"><mat-icon>undo</mat-icon></button>
+        <button mat-button [matMenuTriggerFor]="menu">Adicionar Product</button>
+        <div class="stop-propagation" (click)="$event.stopPropagation()">
+            <mat-menu #menu="matMenu"(click)="$event.stopPropagation()" >
+                <app-adicionar-produtos></app-adicionar-produtos>
+            </mat-menu>
+        </div>
+       
+
     </div>
-    
+
     <div class="container-cards box">
         <app-card></app-card>
         <app-card></app-card>

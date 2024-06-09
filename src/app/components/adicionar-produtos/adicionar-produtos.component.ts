@@ -4,6 +4,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import IProduct from '../../interface/IProduct';
 
 @Component({
   selector: 'app-adicionar-produtos',
@@ -13,6 +14,7 @@ import {
 export class AdicionarProdutosComponent {
 
   productForm: FormGroup = new FormGroup({});
+  product: IProduct | null = null;
 
   constructor(
     private fb: FormBuilder
@@ -27,7 +29,8 @@ export class AdicionarProdutosComponent {
   }
 
   register(){
-    console.log(this.productForm.value)
+    this.product = this.productForm.value;
+    console.log(this.product);
   }
 }
 

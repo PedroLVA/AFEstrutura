@@ -1,4 +1,11 @@
 import { Component } from '@angular/core';
+import {
+  AbstractControl,
+  FormBuilder,
+  FormGroup,
+  ValidatorFn,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-adicionar-produtos',
@@ -7,4 +14,23 @@ import { Component } from '@angular/core';
 })
 export class AdicionarProdutosComponent {
 
+  productForm: FormGroup = new FormGroup({});
+
+  constructor(
+    private fb: FormBuilder
+  ) { }
+
+  ngOnInit(): void {
+    this.productForm = this.fb.group({
+      name: ['', [Validators.required, Validators.maxLength(250)]],
+      description: ['', [Validators.required]],
+      price: ['', [Validators.required]],
+    });
+  }
+
+  register(){
+    console.log(this.productForm.value)
+  }
 }
+
+

@@ -1,10 +1,17 @@
 @import "../../../assets/variables.scss";
 .example-card {
-    max-width: 400px;
+    width: 400px;
     border-top: 20px solid $primary-purple;
     border-radius: 20px ;
+    overflow: hidden;
+    word-wrap: break-word;
   }
   
+  .mat-card-content p {
+    white-space: normal; /* Ensure the text can wrap */
+    word-wrap: break-word; /* Break long words to fit within the container */
+    overflow-wrap: break-word; /* Ensure wrapping in modern browsers */
+  }
  .flex{
     display: flex;
     justify-content: space-between;

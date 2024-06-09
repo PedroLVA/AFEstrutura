@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
   Validators,
 } from '@angular/forms';
-import IProduct from '../../interface/IProduct';
+import IProduct from '../../utils/IProduct';
 
 @Component({
   selector: 'app-adicionar-produtos',
@@ -15,6 +15,8 @@ export class AdicionarProdutosComponent {
 
   productForm: FormGroup = new FormGroup({});
   product: IProduct | null = null;
+
+  @Output() addProduct = new EventEmitter<IProduct>();
 
   constructor(
     private fb: FormBuilder
@@ -30,7 +32,10 @@ export class AdicionarProdutosComponent {
 
   register(){
     this.product = this.productForm.value;
-    console.log(this.product);
+    if (this.product) {
+      this.addProduct.emit(this.product);
+      this.productForm.reset();
+    }
   }
 }
 

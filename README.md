@@ -44,7 +44,7 @@ Projeto feito para matéria de Estrutura de Dados do Centro Universitário Facen
   
 
 * Verificar a Instalação digitando o seguinte comando no terminal:
-* 
+
  ```sh
   ng version
  ```

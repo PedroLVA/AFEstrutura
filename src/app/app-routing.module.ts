@@ -7,7 +7,10 @@ import { AdicionarProdutosComponent } from './components/adicionar-produtos/adic
 
 
 const routes: Routes = [
- 
+  {
+    path: '',
+    component: HomeComponent
+  },
     {
     path: 'home',
     component: HomeComponent

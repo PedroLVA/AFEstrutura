@@ -1,27 +1,68 @@
 # AFEstrutura
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+Projeto feito para matéria de Estrutura de Dados do Centro Universitário Facens - 3 Semestre do curdo de ADS
 
-## Development server
+### Integrantes:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Fernando Soares
 
-## Code scaffolding
+* João Silveira
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Raphael Carneiro
 
-## Build
+* Maria Eduarda
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Pedro Luiz
 
-## Running unit tests
+## Como rodar o projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Passo 1: Baixar Node.js
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* Visite o [site oficial do Node.js](https://nodejs.org/en).
+* Baixe e instale a versão LTS do Node.js para o seu sistema operacional.
+* Verificar a Instalação digitando os seguintes comandos no terminal:
 
-## Further help
+  ```sh
+  node -v
+  ```
+  
+   ```sh
+   npm -v
+    ```
+  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+### Passo 2: Instalar o Angular CLI
+
+* Execute o seguinte comando no terminal:
+
+  ```sh
+  npm install -g @angular/cli
+  ```
+  
+
+* Verificar a Instalação digitando o seguinte comando no terminal:
+
+ ```sh
+  ng version
+ ```
+
+### Passo 3: Clonar o projeto
+
+* Clone o projeto utilizando git e o seguinte link: https://github.com/PedroLVA/AFEstrutura.git
+
+### Passo 4: Instale as dependências
+
+* Na pasta AFEstrutura do projeto, no terminal, rode o seguinte comando:
+  ```sh
+  npm install
+   ```
+   
+### Passo 5: Rodar o projeto
+
+* Na pasta AFEstrutura do projeto, no terminal, rode o seguinte comando:
+   ```sh
+  ng serve
+    ```

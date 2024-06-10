@@ -14,10 +14,11 @@ export class VerProdutosComponent {
   binaryTree: BinaryTree = new BinaryTree();
   products: Array<IProduct> = [];
   actualId = 1;
+  filterValue: string = 'one';
 
   constructor() {
     this.products = [
-      { id: this.actualId, name: 'Produto 1', description: 'Descrição do produto 1Descrição do produto 1Descrição do produto 1Descrição do produto 1Descrição do produto 1Descrição do produto 1Descrição do produto 1Descrição do produto 1Descrição do produto 1', price: 10.00 },
+      { id: this.actualId, name: 'Produto 1', description: 'Descrição do produto 1', price: 10.00 },
       { id: this.actualId += 1, name: 'Produto 2', description: 'Descrição do produto 2', price: 20.00 },
       { id: this.actualId += 1, name: 'Produto 3', description: 'Descrição do produto 3', price: 30.00 }
     ];

@@ -2,7 +2,7 @@
   <div class="flex-filter-undo">
     <mat-form-field>
       <mat-label>Filtrar por...</mat-label>
-      <mat-select (selectionChange)="onFilterChange($event)">
+      <mat-select [(value)]="filterValue" (selectionChange)="onFilterChange($event)">
         <mat-option value="one">Preço crescente</mat-option>
         <mat-option value="two">Preço decrescente</mat-option>
       </mat-select>

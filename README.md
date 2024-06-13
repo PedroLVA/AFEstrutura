@@ -1,4 +1,4 @@
-![image](https://github.com/PedroLVA/AFEstrutura/assets/130158934/4666e4b7-483e-4e41-8c67-203ebdbcdf8f)# AFEstrutura
+# AFEstrutura
 
 Projeto feito para matéria de Estrutura de Dados do Centro Universitário Facens - 3 Semestre do curdo de ADS
 

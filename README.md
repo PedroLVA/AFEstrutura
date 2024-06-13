@@ -15,10 +15,11 @@ Projeto feito para matéria de Estrutura de Dados do Centro Universitário Facen
 * Pedro Luiz
 
 ## Como rodar o projeto
+* Estaremos utilizando a [IDE VSCode](https://code.visualstudio.com) para rodar o projeto
 
 ### Passo 1: Baixar Node.js
 
-* Estaremos utilizando a [IDE VSCode](https://code.visualstudio.com). para rodar o projeto
+
 
 
 * Visite o [site oficial do Node.js](https://nodejs.org/en).

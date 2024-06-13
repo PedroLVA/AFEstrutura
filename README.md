@@ -72,7 +72,25 @@ Projeto feito para matéria de Estrutura de Dados do Centro Universitário Facen
 
 ### Passo 6: Acessar o localhost da aplicação
 
-Por padrão a aplicação angular rodará no http://localhost:4200, porém, caso essa porta esteja sendo utilizada, o terminal te informará qual porta o angular está utilizando
+Por padrão a aplicação angular rodará no http://localhost:4200, porém, caso essa porta esteja sendo utilizada, o terminal informará qual porta o angular está utilizando
 
 ![image](https://github.com/PedroLVA/AFEstrutura/assets/130158934/1f0f7f0e-c42f-4dc9-a309-2473b98b237e)
+
+## Quick fixes para erros ao buildar o projeto
+
+* Deletar a pasta node_modules e dar npm install novamente
+* Reiniciar a IDE
+* Clonar o projeto novamente
+* Reinstale globalmente o Angular CLI:
+  ```sh
+  npm uninstall -g @angular/cli
+  npm install -g @angular/cli
+    ```
+  
+* Limpe o cache do npm:
+   ```sh
+  npm cache clean --force
+    ```
+
+
 

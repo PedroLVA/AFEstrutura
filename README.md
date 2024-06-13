@@ -1,4 +1,4 @@
-# AFEstrutura
+![image](https://github.com/PedroLVA/AFEstrutura/assets/130158934/4666e4b7-483e-4e41-8c67-203ebdbcdf8f)# AFEstrutura
 
 Projeto feito para matéria de Estrutura de Dados do Centro Universitário Facens - 3 Semestre do curdo de ADS
 
@@ -69,3 +69,10 @@ Projeto feito para matéria de Estrutura de Dados do Centro Universitário Facen
    ```sh
   ng serve
     ```
+
+### Passo 6: Acessar o localhost da aplicação
+
+Por padrão a aplicação angular rodará no http://localhost:4200, porém, caso essa porta esteja sendo utilizada, o terminal te informará qual porta o angular está utilizando
+
+![image](https://github.com/PedroLVA/AFEstrutura/assets/130158934/1f0f7f0e-c42f-4dc9-a309-2473b98b237e)
+

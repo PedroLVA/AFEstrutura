@@ -18,6 +18,8 @@ Projeto feito para matéria de Estrutura de Dados do Centro Universitário Facen
 
 ### Passo 1: Baixar Node.js
 
+* Estaremos utilizando a [IDE VSCode](https://code.visualstudio.com). para rodar o projeto
+
 
 * Visite o [site oficial do Node.js](https://nodejs.org/en).
 * Baixe e instale a versão LTS do Node.js para o seu sistema operacional.
@@ -55,7 +57,7 @@ Projeto feito para matéria de Estrutura de Dados do Centro Universitário Facen
 
 ### Passo 4: Instale as dependências
 
-* Na pasta AFEstrutura do projeto, no terminal, rode o seguinte comando:
+* Com o VScode aberto e no terminal integrado, na pasta AFEstrutura do projeto, rode o seguinte comando:
   ```sh
   npm install
    ```
